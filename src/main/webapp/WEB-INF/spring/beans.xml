@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <beans xmlns="http://www.springframework.org/schema/beans"
+       		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      		xsi:schemaLocation="http://www.springframework.org/schema/beans
+    			http://www.springframework.org/schema/beans/spring-beans-3.0.xsd ">
+    
+  <bean id="customerServ" class="com.deeodynamics.dore.service.GenericDBServImpl">
+   	<property name="hibernateGenericDAO" ref="customerDAO" />
+	</bean>
+    
+  <bean id="customerDAO" class="com.deeodynamics.dore.dao.HibernateGenericDAOImpl">
+    <property name="classT" value="com.deeodynamics.dore.domain.Customer"/>
+	</bean>
+	
+	<bean id="categoryServ" class="com.deeodynamics.dore.service.GenericDBServImpl">
+   	<property name="hibernateGenericDAO" ref="categoryDAO" />
+	</bean>
+    
+  <bean id="categoryDAO" class="com.deeodynamics.dore.dao.HibernateGenericDAOImpl">
+    <property name="classT" value="com.deeodynamics.dore.domain.Category"/>
+	</bean>
+    
+ </beans>

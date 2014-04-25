@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="retroLayout" template="/WEB-INF/views/retro/layout/layout.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/WEB-INF/views/retro/layout/header.jsp" />
+    <!-- <put-attribute name="menu" value="/WEB-INF/views/retro/layout/menu.jsp" /> -->
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/WEB-INF/views/retro/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="retroIndex" extends="retroLayout">
+    <put-attribute name="body" value="/WEB-INF/views/retro/index/body.jsp" />
+	</definition>
+	
+	<definition name="retroCMS" extends="retroLayout">
+    <put-attribute name="body" value="/WEB-INF/views/retro/cms/body.jsp" />
+	</definition>
+ 
+</tiles-definitions>
