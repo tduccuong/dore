@@ -7,5 +7,6 @@
 	<session-factory>
 		<!-- List of XML mapping files -->
 		<mapping class="com.deeodynamics.dore.domain.Customer"/>
+		<mapping class="com.deeodynamics.dore.domain.Category"/>
 	</session-factory>
 </hibernate-configuration>

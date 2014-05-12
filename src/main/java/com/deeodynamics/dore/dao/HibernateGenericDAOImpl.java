@@ -15,9 +15,7 @@ import org.springframework.stereotype.Repository;
 public class HibernateGenericDAOImpl<T, ID extends Serializable> 
 										implements IHibernateGenericDAO<T, ID> {
 	
-	//public HibernateGenericDAOImpl() { }
-	
-  private Class<T> classT;
+	private Class<T> classT;
   protected String table; // Name of the table that T represents
   
   public Class<T> classType() { 

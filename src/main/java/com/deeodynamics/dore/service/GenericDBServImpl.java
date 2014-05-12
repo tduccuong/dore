@@ -37,6 +37,7 @@ public class GenericDBServImpl<T, ID extends Serializable>
 	}
 
 	@Override
+	@Transactional
 	public T get(ID id) {
 		return hibernateGenericDAO.get(id);
 	}
